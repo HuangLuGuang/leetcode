@@ -28,6 +28,16 @@ class Solution:
                 nums[i] = temp[i - k]
 
 
+# class Solution:
+#     def rotate(self, nums: list, k: int) -> None:
+#         k = k % len(nums)
+#
+#         while k:
+#             nums.insert(0, nums.pop())
+#             k -= 1
+#
+
+
 if __name__ == '__main__':
     solution = Solution()
     nums = [1,2,3,4,5,6,7]
