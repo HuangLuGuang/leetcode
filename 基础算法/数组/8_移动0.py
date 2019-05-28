@@ -29,9 +29,14 @@ class Solution:
         for i in range(index, len(nums)):
             nums[i] = 0
 
+def key(val):
+    if val == 0:
+        return False
+    return True
+
 if __name__ == '__main__':
     nums = [0,0,1,0,3,5,0,2]
-    nums.sort(key=bool, reverse=True)
+    nums.sort(key=key, reverse=True)
     # s = Solution()
     # s.moveZeroes(nums)
     print(nums)
