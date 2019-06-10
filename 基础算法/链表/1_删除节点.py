@@ -44,6 +44,21 @@ class Solution:
         node.val = node.next.val
         node.next = node.next.next
 
+def print_node(head):
+    while head:
+        print(head.val)
+        head = head.next
+
 if __name__ == '__main__':
+    node3 = ListNode(3)
+    node2 = ListNode(2)
+    node1 = ListNode(1)
+    head = ListNode(0)
+    head.next = node1
+    node1.next = node2
+    node2.next = node3
+    print_node(head)
     s = Solution()
-    s.deleteNode()
+    s.deleteNode(node1)
+    print("-" * 10)
+    print_node(head)
